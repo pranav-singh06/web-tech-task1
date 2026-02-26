@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 9999; /* ensures it stays above all content */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 50px;
+    background-color: #1b305c;
+}
+
+
+/* LOGO */
+.logo img {
+    height: 55px;
+}
+
+/* NAV LINKS */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;          /* WHITE TEXT */
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #d6e0ff;          /* subtle hover */
+}
+
+/* PAGE TITLE */
+.page-title {
+    text-align: center;
+    margin: 50px 0 40px;
+    font-size: 38px;
+}
+
+/* CAMPUS SECTION */
+.campus {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 60px;
+    background-color: #ffffff;
+
+    margin-bottom: 50px; /* invisible gap */
+}
+
+.campus.reverse {
+    flex-direction: row-reverse;
+}
+
+/* IMAGE SIZE INCREASED */
+.campus img {
+    width: 52%;          /* increased from 48% */
+    height: 360px;       /* increased height */
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.campus-content {
+    width: 52%;
+}
+
+.campus-content h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.campus-content p {
+    font-size: 16.5px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    padding: 13px 26px;
+    background-color: #002b5c;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #004080;
+}
+
+/* FOOTER */
+footer {
+    background-color: #002b5c;
+    text-align: center;
+    padding: 18px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .campus,
+    .campus.reverse {
+        flex-direction: column;
+    }
+
+    .campus img,
+    .campus-content {
+        width: 100%;
+    }
+
+    .campus img {
+        height: 280px; /* increased for mobile */
+    }
+}
+    .navbar {
+        padding: 14px 25px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
